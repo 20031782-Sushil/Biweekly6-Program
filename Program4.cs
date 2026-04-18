@@ -21,14 +21,14 @@ namespace ConsoleApplication
                 string customerName = Console.ReadLine();
 
                 // Input Number Of Coffee Bags
-                Console.Write("Enter Number Of Coffee Bags (1-200): ");
+                Console.Write("Enter Number Of Coffee Bags (1-80): ");
                 int numCoffeeBags = Int32.Parse(Console.ReadLine());
 
                 // Keep Re-Entering Number Of Coffee Bags
                 // If Until User Enters Invalid Value
                 while (numCoffeeBags < 1 || numCoffeeBags > 200)
                 {
-                    Console.WriteLine("Value Must Be Between 10 And 1000!");
+                    Console.WriteLine("Value Must Be Between 1 And 80!");
                     Console.Write("Re-Enter Number Of Coffee Bags (10-1000: ");
                     numCoffeeBags = Int32.Parse(Console.ReadLine());
                 }
